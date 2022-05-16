@@ -1,0 +1,23 @@
+@import'../base/variables';
+
+.header {
+    grid-area: header;
+
+        .background-nav {
+            background-image: $bg-color-header;
+        }
+    }
+
+.navbar-brand img {
+    width: 330px;
+    height: 100px;
+}
+
+.nav-ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: white;
+}

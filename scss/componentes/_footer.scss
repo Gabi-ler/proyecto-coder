@@ -1,0 +1,108 @@
+@import'../base/variables';
+
+.footer {
+    background-image: $bg-color-footer;
+    color: aliceblue;
+    text-align: center;
+    grid-area: pie-de-pagina;
+
+    .pie-de-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+
+            ul {
+                font-size: 20px;
+                list-style: none;
+                font-style: verdana;
+                padding-right: 55px;
+                margin-top: 15px;
+
+                li {
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: deepskyblue;
+                            text-shadow: none;
+                            transition: 1s;
+                        }
+                    }
+
+                    @media screen and (max-width: 950px) {
+                        display: inline;
+                        padding-left: 25px;
+                    }
+
+                    @media screen and (max-width: 830px) {
+                        display: inline;
+                        padding-left: 25px;
+                    }
+                }
+
+
+                @media screen and (max-width: 950px) {
+                    align-items: center;
+                    padding-top: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .logo-footer {
+            margin-left: 35px;
+
+            a img {
+                height: 80px;
+                width: 260px;
+
+                @media screen and (max-width: 950px) {
+                    width: 160px;
+                    height: 70px;
+                }
+            }
+
+            @media screen and (max-width: 950px) {
+                padding-right: 30px;
+            }
+        }
+
+        .redes-sociales {
+            margin-right: 30px;
+            display: flex;
+
+            a img {
+                display: inline;
+                transition: all 1, 5s;
+                margin-right: 20px;
+
+                img {
+                    margin-left: 15px;
+                }
+            }
+
+            div {
+                &:hover {
+                    transform: scale(1.4);
+                }
+            }
+
+            @media screen and (max-width: 950px) {
+                padding-left: 15px;
+                padding-top: 15px;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            grid-area: pie-de-pagina;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr auto 0.18fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "pie-de-pagina pie-de-pagina";
+}
+
+/* <<<<<------HEADER------>>>>> */
+/* .header{
+    background-image: linear-gradient(black, darkgrey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    width: 100%;
+    padding: 10px;
+}
+
+.header a img{
+    width: 330px;
+    height: 100px;
+
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    font-style: verdana;
+    padding-right: 20px;  
+}
+.header nav ul li {
+    margin-left: 15px;
+}
+
+.header nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.header nav ul li a:hover {
+    color: deepskyblue;
+    text-shadow: none;
+    transition: 1s;
+} */
+.header {
+    grid-area: header;
+}
+
+.navbar-brand img {
+    width: 330px;
+    height: 100px;
+}
+
+.background-nav {
+    background-image: linear-gradient(black, darkgrey);
+}
+
+.nav-ul li a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: white;
+}
+
+/*-------------- MAIN--------------- */
+/* -------section---------- 1 */
+.main {
+    grid-area: main;
+    width: 100%;
+    /* background-color:hsla(208, 25%, 67%, 0.651); */
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.5)), url(../images/familiafeliz.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #5fa1bd;
+}
+
+.hero-section h2 {
+    font-size: 25px;
+    text-align: right;
+    color: #5fa1bd;
+}
+
+.hero-section p {
+    font-size: 18px;
+}
+
+/* ----------section-------- 2 */
+.productos-destacados {
+    background-color: hsla(210, 19%, 75%, 0.651);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* .productos-destacados div div{
+    width: 283px;
+    border-radius: 10px;
+    border: solid rgba(109, 108, 108, 0.63);
+    box-shadow: 10px, 10px 44px -17px rgba(0,0,0,0.75);
+} */
+
+.productos-destacados h2 {
+    text-align: center;
+    padding-top: 18px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.imagenes-productos {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.imagenes-productos a img {
+    border-radius: 10px;
+    width: 280px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1, 3s;
+}
+
+.imagenes-productos>div img:hover {
+    transform: scale(1.1)
+        /* animation: changeStyle 3s;
+}
+
+@keyframes changeStyle{
+    0%{
+        transform: scale(1.1);
+}
+    50%{
+        border-radius: 50%;
+}
+    100%{
+        border-radius:10px;
+} */
+}
+
+.imagenes-productos p {
+    width: 280px;
+    height: 240px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*-------- section contacto------- */
+.contacto {
+    background-color: hsla(210, 19%, 75%, 0.651);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.maps-datos {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maps-datos iframe {
+    border-radius: 15px;
+    width: 430px;
+    height: 330px;
+}
+
+.maps-datos div {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.maps-datos div h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.maps-datos div p {
+    font-size: 20px;
+}
+
+/*----------- FOOTER----------- */
+.footer {
+    background-image: linear-gradient(to bottom, darkgrey, black);
+    color: aliceblue;
+    text-align: center;
+    grid-area: pie-de-pagina;
+}
+
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer nav ul {
+    font-size: 20px;
+    list-style: none;
+    font-style: verdana;
+    padding-right: 55px;
+    margin-top: 15px;
+}
+
+.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer nav ul li a:hover {
+    color: deepskyblue;
+    text-shadow: none;
+    transition: 1s;
+}
+
+.logo-footer {
+    margin-left: 35px;
+}
+
+.logo-footer a img {
+    height: 80px;
+    width: 260px;
+}
+
+.redes-sociales {
+    margin-right: 30px;
+    display: flex;
+}
+
+.redes-sociales a img {
+    display: inline;
+    transition: all 1, 5s;
+    margin-right: 20px;
+}
+
+.redes-sociales>div:hover {
+    transform: scale(1.4);
+}
+
+/* MAIN hogar */
+.servicio-hogar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.5)), url(../images/img-alarma-hogar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    align-items: center;
+}
+
+.servicio-hogar h1 {
+    width: 600px;
+    height: 140px;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #363636;
+}
+
+.alarma-dom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.alarma-dom>div {
+    width: 480px;
+    font-size: 20px;
+}
+
+.alarma-dom img {
+    width: 460px;
+    height: 310px;
+}
+
+.descripcion-hogar {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.descripcion-hogar div {
+    width: 83%;
+    justify-content: center;
+}
+
+.descripcion-hogar h2 {
+    text-align: center;
+}
+
+.descripcion-hogar p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+/* MAIN empresas */
+/*-- Background-section-- */
+.section-empresas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.5)), url(../images/img-monitoreo-empresas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-empresas h1 {
+    width: 650px;
+    height: 140px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding-left: 30px;
+}
+
+/* --section-two-- */
+.section-carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.texto-empresas {
+    font-family: 'Poppins', sans-serif;
+    width: 550px;
+    align-items: center;
+}
+
+.texto-empresas h2 {
+    font-size: 40px;
+}
+
+.texto-empresas p {
+    font-size: 20px;
+}
+
+.size-carrousel {
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+
+.size-carrousel img {
+    width: 450px;
+    height: 380px;
+}
+
+/* --section-three-- */
+.section-three {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-three>div img {
+    width: 650px;
+    height: 380px;
+    padding-right: 15px;
+}
+
+/* MAIN formularios */
+
+/* MAIN quienes somos */
+.nstra-historia {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nstra-historia h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nstra-historia p {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+
+}
+
+/* ----------Media queries------------- */
+/* responsive mobile */
+@media screen and (max-width: 950px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "pie-de-pagina"
+    }
+
+    .header {
+        grid-area: header;
+        flex-direction: column;
+    }
+
+    .header a img {
+        width: 160px;
+        height: 70px;
+    }
+
+    .header nav ul li a {
+        font-size: 15px;
+    }
+
+    .main {
+        grid-area: main;
+        align-items: center;
+    }
+
+    /* .hero-section{
+        background-size:auto;
+        background-position: center;
+    } */
+
+    .productos-destacados h2 {
+        font-size: 25px;
+    }
+
+    .imagenes-productos {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .contacto h2 {
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+
+    /* .maps-datos{
+        flex-direction: column; */
+    /* /* align-items: center; 
+    } */
+
+    .maps-datos iframe {
+        width: 315px;
+        height: 260px;
+    }
+
+    .maps-datos div {
+        padding-bottom: 10px;
+    }
+
+    /* -------FOOTER QUERIES------ */
+    .pie-de-pagina {
+        grid-area: pie-de-pagina;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .pie-de-pagina nav {
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .logo-footer {
+        padding-right: 30px;
+    }
+
+    .logo-footer a img {
+        width: 160px;
+        height: 70px;
+    }
+
+    .pie-de-pagina nav ul li {
+        display: inline;
+        padding-left: 25px;
+    }
+
+    .redes-sociales {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .redes-sociales img {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .hero-section {
+        background-position: center;
+        /* height: 50vh; */
+    }
+
+    .maps-datos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maps-datos iframe {
+        width: 510px;
+        height: 470px;
+    }
+}

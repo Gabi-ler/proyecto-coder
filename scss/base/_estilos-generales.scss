@@ -1,0 +1,25 @@
+*{  
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr auto 0.18fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "pie-de-pagina pie-de-pagina";
+    
+        @media screen and (max-width: 950px){
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "header"
+                "main"
+                "pie-de-pagina"
+            }
+    }
