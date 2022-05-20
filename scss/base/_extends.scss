@@ -1,0 +1,13 @@
+/*extends*/
+/* % = playholder */
+
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.maps-datos{
+    @extend %flex;
+}
+

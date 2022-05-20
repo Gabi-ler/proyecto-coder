@@ -1,0 +1,19 @@
+/*mixin*/
+@mixin texto ($size, $align, $color) {
+    font-size: $size;
+    text-align: $align;
+    color: $color;
+}
+
+.hero-section {
+    h1 {
+        @include texto(40px, center, #5fa1bd);
+    }
+}
+
+.pedido-tec{
+    h1{
+        @include texto(30px, center,black )
+    }
+}
+

@@ -1,23 +1,24 @@
 @import'../base/variables';
+@import'../base/mapas';
 
 .header {
     grid-area: header;
 
         .background-nav {
-            background-image: $bg-color-header;
+            background-image: map-get($header, bg-header);
         }
     }
 
 .navbar-brand img {
-    width: 330px;
-    height: 100px;
+    width: map-get($header, size-logo-ancho);
+    height: map-get($header, size-logo-alto);
 }
 
 .nav-ul li a {
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: map-get($header, font-size);
+    text-transform: map-get($header, font-forma);
 }
 
 .nav-link {
-    color: white;
+    color: map-get($header, color-letra);
 }

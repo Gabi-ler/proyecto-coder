@@ -309,12 +309,12 @@
     padding-top: 45px;
 }
 
-.alarma-dom>div {
+.texto-al-dom {
     width: 480px;
     font-size: 20px;
 }
 
-.alarma-dom img {
+.imagen-al-dom img {
     width: 460px;
     height: 310px;
 }
