@@ -1,0 +1,51 @@
+.main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    h1 {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .pedido-tec {
+        background-color: #3f9ad682;
+        border-radius: 20px;
+        border: solid 2px rgba(168, 165, 165, 0.547);
+        margin-bottom: 25px;
+
+        h2 {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-left: 15px;
+            color: black;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 15px;
+            color: #61616a;
+        }
+
+        .form {
+            padding-top: 15px;
+            padding: 15px;
+
+            .boton-enviar {
+                display: flex;
+                justify-content: flex-end;
+
+                .boton {
+                    width: 160px;
+                    height: 40px;
+                    color: white;
+                    background-color: #61616a;
+                    border-radius: 15px;
+
+                    &:hover {
+                        background-color: #b9b9c6;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+    }
+}

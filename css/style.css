@@ -123,7 +123,7 @@
 }
 @media screen and (max-width: 950px) {
   .footer .pie-de-pagina .redes-sociales {
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 15px;
   }
 }
@@ -151,22 +151,64 @@
   width: 100%;
   height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  /*h1 {
-      font-size: 40px;
-      text-align: center;
-      color: #5fa1bd;
-  }*/
+  flex-direction: row-reverse;
+  /*desde aca es nuevoagregado*/
 }
-.main .hero-section h2 {
-  font-size: 25px;
+.main .hero-section .titulo-principal {
+  text-align: center;
+  /*hasta aca*/
+}
+.main .hero-section .titulo-principal h1 {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+.main .hero-section .titulo-principal h2 {
+  font-size: 35px;
   text-align: right;
-  color: #5fa1bd;
+  color: white;
 }
-.main .hero-section p {
-  font-size: 18px;
+.main .hero-section .formularios {
+  background-color: rgba(63, 154, 214, 0.5098039216);
+  width: 340px;
+  height: 470px;
+  margin-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: solid 3px black;
+  border-radius: 10px;
+}
+.main .hero-section .formularios .text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.main .hero-section .formularios .text h2 {
+  font-size: 25px;
+  color: aliceblue;
+}
+.main .hero-section .formularios .celdas .form-label {
+  color: white;
+}
+.main .hero-section .formularios .boton-enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+}
+.main .hero-section .formularios .boton-enviar .boton {
+  width: 200px;
+  height: 60px;
+  color: white;
+  background-color: #b9b9c6;
+  border-radius: 15px;
+}
+.main .hero-section .formularios .boton-enviar .boton:hover {
+  background-color: #61616a;
+  color: aliceblue;
 }
 @media screen and (max-width: 695px) {
   .main .hero-section {
@@ -174,7 +216,7 @@
   }
 }
 .main .productos-destacados {
-  background-color: hsla(210deg, 19%, 75%, 0.651);
+  background-color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .main .productos-destacados h2 {
@@ -189,30 +231,37 @@
   }
 }
 .main .productos-destacados .imagenes-productos {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  margin-bottom: 60px;
 }
-.main .productos-destacados .imagenes-productos a img {
+.main .productos-destacados .imagenes-productos div {
+  border: solid 2px rgba(168, 168, 168, 0.526);
+  border-radius: 10px;
+  box-shadow: 10px 10px 44px -17px rgba(0, 0, 0, 0.792);
+  transition: 1, 3s;
+}
+.main .productos-destacados .imagenes-productos div:hover {
+  transform: scale(1.1);
+}
+.main .productos-destacados .imagenes-productos div a img {
   border-radius: 10px;
   width: 280px;
   height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1, 3s;
 }
-.main .productos-destacados .imagenes-productos a img:hover {
-  transform: scale(1.1);
-}
-.main .productos-destacados .imagenes-productos p {
-  width: 280px;
-  height: 240px;
-  font-size: 18px;
+.main .productos-destacados .imagenes-productos div p {
+  width: 270px;
+  height: 150px;
+  font-size: 16px;
   font-weight: bold;
   padding-top: 15px;
+  padding: 5px;
   text-align: center;
 }
 @media screen and (max-width: 950px) {
@@ -222,7 +271,7 @@
   }
 }
 .main .contacto {
-  background-color: hsla(210deg, 19%, 75%, 0.651);
+  background-color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
 }
@@ -346,6 +395,10 @@
   padding-bottom: 30px;
 }
 
+.main {
+  /*-----SECCION 1-----*/
+  /*-----SECCION 2-----*/
+}
 .main .section-empresas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.5)), url(../images/img-monitoreo-empresas.jpg);
   background-repeat: no-repeat;
@@ -433,17 +486,55 @@
   padding-bottom: 20px;
 }
 
+.main {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+.main .pedido-tec {
+  background-color: rgba(63, 154, 214, 0.5098039216);
+  border-radius: 20px;
+  border: solid 2px rgba(168, 165, 165, 0.547);
+  margin-bottom: 25px;
+}
+.main .pedido-tec h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 15px;
+  color: black;
+}
+.main .pedido-tec p {
+  font-size: 20px;
+  padding: 15px;
+  color: #61616a;
+}
+.main .pedido-tec .form {
+  padding-top: 15px;
+  padding: 15px;
+}
+.main .pedido-tec .form .boton-enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .pedido-tec .form .boton-enviar .boton {
+  width: 160px;
+  height: 40px;
+  color: white;
+  background-color: #61616a;
+  border-radius: 15px;
+}
+.main .pedido-tec .form .boton-enviar .boton:hover {
+  background-color: #b9b9c6;
+  color: aliceblue;
+}
+
 /*mixin*/
 .hero-section h1 {
   font-size: 40px;
   text-align: center;
   color: #5fa1bd;
-}
-
-.pedido-tec h1 {
-  font-size: 30px;
-  text-align: center;
-  color: black;
 }
 
 /*extends*/
