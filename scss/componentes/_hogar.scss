@@ -1,7 +1,9 @@
 .main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     .servicio-hogar {
         background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.5)), url(../images/img-alarma-hogar.jpg);
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -21,6 +23,11 @@
             color: whitesmoke;
             text-shadow: 1px 1px 2px #363636;
         }
+
+        @media screen and (max-width: 790px) {
+            justify-content: center;
+            padding-right: 0px;
+        }
     }
 
     .alarma-dom {
@@ -32,13 +39,26 @@
         .texto-al-dom {
             width: 480px;
             font-size: 20px;
+
+            @media screen and (max-width: 992px) {
+                width: 100%;
+            }
         }
 
         .imagen-al-dom {
             img {
                 width: 460px;
                 height: 310px;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                    height: auto;
+                }
             }
+        }
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
         }
     }
 
@@ -57,7 +77,11 @@
 
             p {
                 font-size: 20px;
-                padding-bottom: 30px;
+                padding-bottom: 30px;               
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 100%;
             }
         }
     }

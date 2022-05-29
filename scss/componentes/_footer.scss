@@ -45,7 +45,6 @@
                     }
                 }
 
-
                 @media screen and (max-width: 950px) {
                     align-items: center;
                     padding-top: 15px;
@@ -69,6 +68,10 @@
 
             @media screen and (max-width: 950px) {
                 padding-right: 30px;
+            }
+
+            @media screen and (max-width: 750px) {
+                display: none;
             }
         }
 

@@ -2,11 +2,17 @@
 
     .nstra-historia {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 23px;
+        background-image: linear-gradient(#a4d1ef82, #c9d2d882);
+        box-shadow: 6px 6px 19px #6d6666, -6px -6px 19px #b5aaaa;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         h2 {
             text-align: center;
             font-size: 30px;
-            padding-top: 20px;
+            padding-top: 15px;
             margin-bottom: 20px;
         }
 

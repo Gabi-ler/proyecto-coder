@@ -106,6 +106,11 @@
     padding-right: 30px;
   }
 }
+@media screen and (max-width: 750px) {
+  .footer .pie-de-pagina .logo-footer {
+    display: none;
+  }
+}
 .footer .pie-de-pagina .redes-sociales {
   margin-right: 30px;
   display: flex;
@@ -139,6 +144,10 @@
 .main {
   grid-area: main;
   width: 100%;
+  /*@media screen and (max-width: 950px) {
+      grid-area: main;
+      align-items: center;
+  }*/
 }
 .main .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.5)), url(../images/familiafeliz.jpeg);
@@ -154,21 +163,41 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-  /*desde aca es nuevoagregado*/
 }
 .main .hero-section .titulo-principal {
   text-align: center;
-  /*hasta aca*/
 }
 .main .hero-section .titulo-principal h1 {
   font-size: 60px;
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 950px) {
+  .main .hero-section .titulo-principal h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 833px) {
+  .main .hero-section .titulo-principal h1 {
+    font-size: 40px;
+  }
+}
 .main .hero-section .titulo-principal h2 {
   font-size: 35px;
   text-align: right;
   color: white;
+}
+@media screen and (max-width: 950px) {
+  .main .hero-section .titulo-principal h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 833px) {
+  .main .hero-section .titulo-principal h2 {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 .main .hero-section .formularios {
   background-color: rgba(63, 154, 214, 0.5098039216);
@@ -190,6 +219,16 @@
   font-size: 25px;
   color: aliceblue;
 }
+@media screen and (max-width: 973px) {
+  .main .hero-section .formularios .text h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .main .hero-section .formularios .text h2 {
+    font-size: 25px;
+  }
+}
 .main .hero-section .formularios .celdas .form-label {
   color: white;
 }
@@ -209,6 +248,26 @@
 .main .hero-section .formularios .boton-enviar .boton:hover {
   background-color: #61616a;
   color: aliceblue;
+}
+@media screen and (max-width: 833px) {
+  .main .hero-section .formularios {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .main .hero-section .formularios {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .main .hero-section .formularios {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .main .hero-section {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 695px) {
   .main .hero-section {
@@ -242,7 +301,7 @@
   border: solid 2px rgba(168, 168, 168, 0.526);
   border-radius: 10px;
   box-shadow: 10px 10px 44px -17px rgba(0, 0, 0, 0.792);
-  transition: 1, 3s;
+  transition: 1s;
 }
 .main .productos-destacados .imagenes-productos div:hover {
   transform: scale(1.1);
@@ -270,6 +329,11 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 645px) {
+  .main .productos-destacados .imagenes-productos {
+    flex-direction: column;
+  }
+}
 .main .contacto {
   background-color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -289,54 +353,50 @@
 }
 .main .contacto .maps-datos {
   width: 100%;
-  height: 420px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   /*display: flex;
   justify-content: space-around;
   align-items: center;*/
 }
 .main .contacto .maps-datos iframe {
   border-radius: 15px;
-  width: 430px;
-  height: 330px;
+  width: 470px;
+  height: 340px;
 }
-@media screen and (max-width: 950px) {
-  .main .contacto .maps-datos iframe {
-    width: 315px;
-    height: 260px;
-  }
-}
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 730px) {
   .main .contacto .maps-datos iframe {
     width: 510px;
-    height: 500px;
+    height: 480px;
   }
 }
 .main .contacto .maps-datos div {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 15px;
 }
 .main .contacto .maps-datos div h3 {
   font-size: 25px;
   text-shadow: 1px 1px 1px black;
-  padding-top: 15px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 730px) {
+  .main .contacto .maps-datos div h3 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
 }
 .main .contacto .maps-datos div p {
   font-size: 20px;
 }
-@media screen and (max-width: 950px) {
-  .main .contacto .maps-datos div {
-    padding-bottom: 10px;
+@media screen and (max-width: 730px) {
+  .main .contacto .maps-datos div p {
+    font-size: 25px;
   }
 }
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 950px) {
   .main .contacto .maps-datos {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 950px) {
-  .main {
-    grid-area: main;
-    align-items: center;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
   }
 }
 
@@ -345,6 +405,7 @@
 }
 .main .servicio-hogar {
   background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.5)), url(../images/img-alarma-hogar.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -364,6 +425,12 @@
   color: whitesmoke;
   text-shadow: 1px 1px 2px #363636;
 }
+@media screen and (max-width: 790px) {
+  .main .servicio-hogar {
+    justify-content: center;
+    padding-right: 0px;
+  }
+}
 .main .alarma-dom {
   display: flex;
   justify-content: space-evenly;
@@ -374,9 +441,25 @@
   width: 480px;
   font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+  .main .alarma-dom .texto-al-dom {
+    width: 100%;
+  }
+}
 .main .alarma-dom .imagen-al-dom img {
   width: 460px;
   height: 310px;
+}
+@media screen and (max-width: 992px) {
+  .main .alarma-dom .imagen-al-dom img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main .alarma-dom {
+    flex-direction: column;
+  }
 }
 .main .descripcion-hogar {
   display: flex;
@@ -394,6 +477,11 @@
   font-size: 20px;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 992px) {
+  .main .descripcion-hogar div {
+    width: 100%;
+  }
+}
 
 .main {
   /*-----SECCION 1-----*/
@@ -401,6 +489,7 @@
 }
 .main .section-empresas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.5)), url(../images/img-monitoreo-empresas.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -417,6 +506,11 @@
   text-transform: uppercase;
   color: whitesmoke;
   padding-left: 30px;
+}
+@media screen and (max-width: 663px) {
+  .main .section-empresas h1 {
+    padding-left: 0px;
+  }
 }
 .main .section-carrousel {
   display: flex;
@@ -436,14 +530,42 @@
 .main .section-carrousel .texto-empresas p {
   font-size: 20px;
 }
+@media screen and (max-width: 1204px) {
+  .main .section-carrousel .texto-empresas {
+    width: 100%;
+    text-align: center;
+  }
+}
 .main .section-carrousel .size-carrousel {
   display: flex;
   width: 50%;
   height: auto;
 }
-.main .section-carrousel .size-carrousel img {
+.main .section-carrousel .size-carrousel .size img {
   width: 450px;
   height: 380px;
+}
+@media screen and (max-width: 1204px) {
+  .main .section-carrousel .size-carrousel .size img {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .main .section-carrousel .size-carrousel .size {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .main .section-carrousel .size-carrousel {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .main .section-carrousel {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .main .section-three {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -456,12 +578,24 @@
 .main .section-three div img {
   width: 650px;
   height: 380px;
-  padding-right: 15px;
+}
+@media screen and (max-width: 1204px) {
+  .main .section-three div img {
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .main .section-three div {
+    width: 100%;
+  }
 }
 .main .section-three .texto-empresas {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 550px;
   align-items: center;
+  padding-left: 15px;
 }
 .main .section-three .texto-empresas h2 {
   font-size: 40px;
@@ -469,14 +603,33 @@
 .main .section-three .texto-empresas p {
   font-size: 20px;
 }
+@media screen and (max-width: 1204px) {
+  .main .section-three .texto-empresas {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .main .section-three {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
 
 .main .nstra-historia {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 23px;
+  background-image: linear-gradient(rgba(164, 209, 239, 0.5098039216), rgba(201, 210, 216, 0.5098039216));
+  box-shadow: 6px 6px 19px #6d6666, -6px -6px 19px #b5aaaa;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .main .nstra-historia h2 {
   text-align: center;
   font-size: 30px;
-  padding-top: 20px;
+  padding-top: 15px;
   margin-bottom: 20px;
 }
 .main .nstra-historia p {
@@ -494,10 +647,12 @@
   padding-top: 15px;
 }
 .main .pedido-tec {
-  background-color: rgba(63, 154, 214, 0.5098039216);
+  background-color: rgba(144, 187, 216, 0.3647058824);
+  box-shadow: 8px 8px 16px #6d6666, -8px -8px 16px #b5aaaa;
   border-radius: 20px;
   border: solid 2px rgba(168, 165, 165, 0.547);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .main .pedido-tec h2 {
   font-size: 30px;
