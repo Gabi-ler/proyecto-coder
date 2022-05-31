@@ -22,11 +22,23 @@
             text-transform: uppercase;
             color: whitesmoke;
             text-shadow: 1px 1px 2px #363636;
+
+            @media screen and (max-width: 414px) {
+                width: 85%;
+            }
         }
 
         @media screen and (max-width: 790px) {
             justify-content: center;
             padding-right: 0px;
+        }
+
+        @media screen and (max-width: 680px) {
+            background-position: center;
+        }
+
+        @media screen and (max-width: 460px) {
+            background-position: center;
         }
     }
 
@@ -42,6 +54,10 @@
 
             @media screen and (max-width: 992px) {
                 width: 100%;
+            }
+
+            @media screen and (max-width: 414px) {
+                text-align: center;
             }
         }
 
@@ -68,8 +84,7 @@
         padding-top: 40px;
 
         div {
-            width: 83%;
-            justify-content: center;
+            width: 90%;
 
             h2 {
                 text-align: center;
@@ -77,7 +92,11 @@
 
             p {
                 font-size: 20px;
-                padding-bottom: 30px;               
+                padding-bottom: 30px;
+
+                @media screen and (max-width: 414px) {
+                    text-align: center;
+                }
             }
 
             @media screen and (max-width: 992px) {

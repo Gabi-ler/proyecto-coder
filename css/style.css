@@ -31,6 +31,12 @@
   width: 330px;
   height: 100px;
 }
+@media screen and (max-width: 580px) {
+  .navbar-brand img {
+    width: 260px;
+    height: 60px;
+  }
+}
 
 .nav-ul li a {
   font-size: 20px;
@@ -229,6 +235,11 @@
     font-size: 25px;
   }
 }
+@media screen and (max-width: 414px) {
+  .main .hero-section .formularios .text h2 {
+    font-size: 18px;
+  }
+}
 .main .hero-section .formularios .celdas .form-label {
   color: white;
 }
@@ -264,6 +275,11 @@
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 414px) {
+  .main .hero-section .formularios {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 760px) {
   .main .hero-section {
     flex-direction: column;
@@ -293,8 +309,8 @@
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  padding-top: 20px;
   margin-bottom: 60px;
 }
 .main .productos-destacados .imagenes-productos div {
@@ -323,10 +339,9 @@
   padding: 5px;
   text-align: center;
 }
-@media screen and (max-width: 950px) {
-  .main .productos-destacados .imagenes-productos {
-    flex-wrap: wrap;
-    align-items: center;
+@media screen and (max-width: 645px) {
+  .main .productos-destacados .imagenes-productos div {
+    margin-bottom: 28px;
   }
 }
 @media screen and (max-width: 645px) {
@@ -355,9 +370,6 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 20px;
-  /*display: flex;
-  justify-content: space-around;
-  align-items: center;*/
 }
 .main .contacto .maps-datos iframe {
   border-radius: 15px;
@@ -368,6 +380,12 @@
   .main .contacto .maps-datos iframe {
     width: 510px;
     height: 480px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .contacto .maps-datos iframe {
+    width: 90%;
+    height: auto;
   }
 }
 .main .contacto .maps-datos div {
@@ -385,12 +403,23 @@
     padding-top: 10px;
   }
 }
+@media screen and (max-width: 414px) {
+  .main .contacto .maps-datos div h3 {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+}
 .main .contacto .maps-datos div p {
   font-size: 20px;
 }
 @media screen and (max-width: 730px) {
   .main .contacto .maps-datos div p {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .contacto .maps-datos div p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -425,10 +454,25 @@
   color: whitesmoke;
   text-shadow: 1px 1px 2px #363636;
 }
+@media screen and (max-width: 414px) {
+  .main .servicio-hogar h1 {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 790px) {
   .main .servicio-hogar {
     justify-content: center;
     padding-right: 0px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main .servicio-hogar {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .main .servicio-hogar {
+    background-position: center;
   }
 }
 .main .alarma-dom {
@@ -444,6 +488,11 @@
 @media screen and (max-width: 992px) {
   .main .alarma-dom .texto-al-dom {
     width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .alarma-dom .texto-al-dom {
+    text-align: center;
   }
 }
 .main .alarma-dom .imagen-al-dom img {
@@ -467,8 +516,7 @@
   padding-top: 40px;
 }
 .main .descripcion-hogar div {
-  width: 83%;
-  justify-content: center;
+  width: 90%;
 }
 .main .descripcion-hogar div h2 {
   text-align: center;
@@ -477,16 +525,17 @@
   font-size: 20px;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 414px) {
+  .main .descripcion-hogar div p {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 992px) {
   .main .descripcion-hogar div {
     width: 100%;
   }
 }
 
-.main {
-  /*-----SECCION 1-----*/
-  /*-----SECCION 2-----*/
-}
 .main .section-empresas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.148), rgba(0, 0, 0, 0.5)), url(../images/img-monitoreo-empresas.jpg);
   background-attachment: fixed;
@@ -510,6 +559,23 @@
 @media screen and (max-width: 663px) {
   .main .section-empresas h1 {
     padding-left: 0px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .section-empresas h1 {
+    width: 90%;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .main .section-empresas {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .section-empresas {
+    justify-content: center;
+    align-items: center;
   }
 }
 .main .section-carrousel {
@@ -550,15 +616,31 @@
     height: 450px;
   }
 }
+@media screen and (max-width: 414px) {
+  .main .section-carrousel .size-carrousel .size img {
+    height: 350px;
+  }
+}
 @media screen and (max-width: 1204px) {
   .main .section-carrousel .size-carrousel .size {
     height: 450px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .section-carrousel .size-carrousel .size {
+    height: 350px;
   }
 }
 @media screen and (max-width: 1204px) {
   .main .section-carrousel .size-carrousel {
     width: 100%;
     height: 450px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main .section-carrousel .size-carrousel {
+    width: 100%;
+    height: 315px;
   }
 }
 @media screen and (max-width: 1204px) {
@@ -637,6 +719,11 @@
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 580px) {
+  .main .nstra-historia {
+    width: 85%;
+  }
 }
 
 .main {
