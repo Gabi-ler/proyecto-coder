@@ -26,4 +26,10 @@
 
 .nav-link {
     color: map-get($header, color-letra);
+
+    &:hover {
+        color: deepskyblue;
+        text-shadow: none;
+        transition: 1s;
+    }
 }

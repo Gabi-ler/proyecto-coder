@@ -27,6 +27,7 @@
                         text-decoration: none;
                         text-transform: uppercase;
 
+
                         &:hover {
                             color: deepskyblue;
                             text-shadow: none;
@@ -81,7 +82,6 @@
 
             a img {
                 display: inline;
-                transition: all 1, 5s;
                 margin-right: 20px;
 
                 img {
@@ -90,6 +90,8 @@
             }
 
             div {
+                transition: 1s;
+
                 &:hover {
                     transform: scale(1.4);
                 }
