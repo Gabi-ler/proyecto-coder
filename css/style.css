@@ -39,7 +39,7 @@
 }
 
 .nav-ul li a {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -64,7 +64,7 @@
   align-items: center;
 }
 .footer .pie-de-pagina nav ul {
-  font-size: 20px;
+  font-size: 18px;
   list-style: none;
   font-style: verdana;
   padding-right: 55px;
@@ -141,8 +141,9 @@
 }
 @media screen and (max-width: 950px) {
   .footer .pie-de-pagina .redes-sociales {
-    padding-left: 20px;
     padding-top: 15px;
+    margin-left: 20px;
+    margin-right: 0px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -715,7 +716,6 @@
 .bg-historia .nstra-historia {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 23px;
-  /*background-color: #78b2d896;*/
   border: solid 3px black;
   text-align: center;
   margin-top: 40px;
@@ -761,7 +761,7 @@
 }
 
 .bg-form {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.304), rgba(24, 24, 24, 0.263)), url(../images/camara-edificio-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.304), rgba(24, 24, 24, 0.263)), url(../images/bg-formularios.jpg);
   background-position: center;
   background-size: cover;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -770,25 +770,25 @@
   text-align: center;
   padding-top: 15px;
   color: aliceblue;
+  font-size: 35px;
 }
 .bg-form .pedido-tec {
-  background-color: rgba(120, 178, 216, 0.5882352941);
+  background-color: rgba(149, 187, 211, 0.4666666667);
   border-radius: 20px;
   border: solid 2px black;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 .bg-form .pedido-tec h2 {
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 10px;
   padding-left: 15px;
   color: aliceblue;
 }
 .bg-form .pedido-tec p {
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px;
   color: aliceblue;
-  /*color: #61616a;*/
 }
 .bg-form .pedido-tec .form {
   padding-top: 15px;
@@ -808,11 +808,6 @@
 .bg-form .pedido-tec .form .boton-enviar .boton:hover {
   background-color: #b9b9c6;
   color: aliceblue;
-}
-@media screen and (max-width: 1100px) {
-  .bg-form {
-    background-position: center;
-  }
 }
 @media screen and (max-width: 960px) {
   .bg-form {
