@@ -219,6 +219,7 @@
         }
 
         .maps-datos {
+            @extend %flex;
             width: 100%;
             padding-top: 15px;
             padding-bottom: 20px;
@@ -243,27 +244,38 @@
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 padding-top: 15px;
 
-                h3 {
-                    font-size: 23px;
-                    text-shadow: 1px 1px 1px black;
-                    padding-top: 5px;
-
-                    @media screen and (max-width: 730px) {
-                        font-size: 30px;
-                        padding-top: 10px;
+                .iconos {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 15px;                  
+                    
+                    img{
+                        width: 20px;
+                        height: 20px;
                     }
 
-                    @media screen and (max-width: 414px) {
+                    h3 {
                         font-size: 20px;
-                        padding-top: 0px;
+                        text-shadow: 1px 1px 1px black;
+                        padding-left: 5px;
+
+                        @media screen and (max-width: 730px) {
+                            font-size: 25px;
+                            padding-top: 5px;
+                        }
+
+                        @media screen and (max-width: 414px) {
+                            font-size: 20px;
+                            padding-top: 0px;
+                        }
                     }
                 }
 
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
 
                     @media screen and (max-width: 730px) {
-                        font-size: 25px;
+                        font-size: 20px;
                     }
 
                     @media screen and (max-width: 414px) {
